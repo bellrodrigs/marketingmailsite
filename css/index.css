@@ -1,0 +1,20 @@
+.paidopai {
+	position: relative;
+}
+.pai {
+	position: absolute;
+	
+}
+
+.paitexto {
+	position: relative;
+	margin-top: 100px;
+	height: 590px;
+}
+
+.textonovo {
+	text-align: justify;
+	color: black;
+	font-size: 1em;
+	
+}
