@@ -1,4 +1,3 @@
-
 <div class="footer">
 	<div class="panel panel-default panel-costum">
 	<div class="container">
