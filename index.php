@@ -1,5 +1,5 @@
 <?php require_once ("header.php"); ?>
-<!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+<!--<link rel="stylesheet" type="text/css" href="css/index.css">--> 
 
 <div class="jumbotron img-responsive jumbotron-costum">
 	<div class="container container-custom">
