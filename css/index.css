@@ -1,20 +1,17 @@
-.paidopai {
-	position: relative;
-}
-.pai {
-	position: absolute;
-	
-}
 
-.paitexto {
-	position: relative;
-	margin-top: 100px;
-	height: 590px;
-}
-
-.textonovo {
+.corpotexto {
+	color: white;
 	text-align: justify;
-	color: black;
 	font-size: 1em;
-	
+}
+
+
+.jumbotron-costum{
+	background-image: url(../imagem/imagemcorpo.jpg);
+	width: 100%;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	margin-bottom: 0;
+	 background-size: cover;
+	background-repeat: no-repeat;
 }

@@ -1,5 +1,6 @@
 <?php require_once ("header.php"); ?>
-<!--<link rel="stylesheet" type="text/css" href="css/index.css">--> 
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
 
 <div class="jumbotron img-responsive jumbotron-costum">
 	<div class="container container-custom">
@@ -7,19 +8,20 @@
 		<p class="corpotexto">Marketing Mail é uma ferramenta que irá permitir que você faça envio de e-mails com layouts predefinidos a sua cartilha de clientes, que poderá ser atualizada ou visualizada a qualquer momento. O Marketing Mail também disponibiliza a geração de relatórios de contatos, alteração, exclusão e também a opção de enviar para um grupo especifico, o qual o próprio usuário irá definir. Ele conta também com a programação de envio de e-mails, ferramenta essencial para quem precisa economizar tempo.
 
 		Não perca tempo e faça o download gratuito do software e também se cadastre para receber tutoriais em vídeos e notificações de atualização em primeira mão.</p>
-		<p><a class="btn btn-primary btn-lg" id="btn-custom" href="#" role="button">Download</a></p>
+		<?php
+				$cookie_name = 'email';
+								
+				error_reporting(0);
+				 if (!is_null($_COOKIE[$cookie_name])) { ?>
+					<p><a href="#" class="btn btn-primary btn-lg" id="btn-custom" href="#" role="button">Download</a></p>
+					
+				<?php } else { ?>
+					<p><a class="btn btn-primary btn-lg" id="btn-custom" href="formulariologin.php" role="button">Download</a></p>
+				<?php } ?>
+		
 	</div>
-</div>
+</div> 
 
-<!--<div class="pai">
-<img class="img-responsive" src="imagem/imagemcorpo.jpg">
-</div>
-<div class="container">
-<div class="paitexto">
-<p class="textonovo">Marketing Mail é uma ferramenta que irá permitir que você faça envio de e-mails com layouts predefinidos a sua cartilha de clientes, que poderá ser atualizada ou visualizada a qualquer momento. O Marketing Mail também disponibiliza a geração de relatórios de contatos, alteração, exclusão e também a opção de enviar para um grupo especifico, o qual o próprio usuário irá definir. Ele conta também com a programação de envio de e-mails, ferramenta essencial para quem precisa economizar tempo.</p>
-</div>
-</div>
-</div>-->
 
 <?php require_once("footer.php"); ?>
 

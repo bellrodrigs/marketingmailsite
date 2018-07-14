@@ -15,7 +15,7 @@
         <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> marketingmail@gmail.com</p>
       </div>
       <div class="col-sm-6 col-md-4">
-        <p><b>Cadastre seu e-mail para receber noticias.</b></p>
+        <p><b>Orçamentos ou mais informações envie um e-mail.</b></p>
         	<p><input type="email" id="sendtEmail" class="form-control"><button type="button" class="btn btn-default navbar-btn" id="btn-enviar">Enviar</button></p>
       </div>
     </div>

@@ -18,12 +18,7 @@
 	color: #e0234a;
 }
 
-.jumbotron-costum{
-	background-image: url(../imagem/imagemcorpo.jpg);
-	padding-bottom: 50px;
-	padding-top: 50px;
-	margin-bottom: 0;
-}
+
 
 .container-custom{
 	text-align: center;
@@ -42,10 +37,7 @@
 }
 
 
-.corpotexto {
-	color: white;
-	text-align: justify;
-}
+
 
 #btn-login {
 	background: #e0234a;
@@ -89,8 +81,22 @@
 	border:none;
 }
 
+#btn-deslogar {
+
+	color: white; 
+	border:none;
+}
+
 
 #bs-example-navbar-collapse-1{
 	margin-left: 3px;
 }
 
+.alert-custom {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: none;
+	padding-left: 0;
+
+}
