@@ -9,9 +9,11 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="css/estilo.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<script src="js/mm.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 
   	<script src="js/imagerJs.js"></script>
   <link href="js/imagerJs.css" rel="stylesheet">
@@ -68,10 +70,10 @@
 
 				<?php
 				$cookie_name = 'email';
-								
+
 				error_reporting(0);
 				 if (!is_null($_COOKIE[$cookie_name])) { ?>
-					
+
 					<form method="POST" action="logout.php">
 						<p style="color: white; display: inline-block; margin-right: 5px; margin-top: 6px;"><?php echo $_COOKIE[$cookie_name]; ?></p>
 					<button class="btn btn-default navbar-btn" id="btn-deslogar" type="submit">Logout</button>
@@ -82,10 +84,9 @@
 					<!--<a href="formulariologin.php"><button type="button" class="btn btn-default navbar-btn" id="btn-logar">Login</button></a>-->
 
 				<?php } ?>
-				
+
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
 </div>
-
