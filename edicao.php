@@ -6,9 +6,7 @@
 		<div class="col-md-2">
 			<button class="btn btn-primary" onclick="addNew()">Editar Imagem</button>
 		</div>
-		<div class="col-md-9" style="float: right;">
-		<div class="form-group" id="imagers">
-			</div>
+		<div class="col-md-9" style="float: right;" id="crop_container">
 		</div>
 	</div>
 </div>
@@ -96,7 +94,19 @@
               'If one wants to disable edit after saving, check the `standalone-remote-upload.html` ' +
               'example file which shows how to upload image on the server ' +
               'and display it in place of ImagerJs after that.');
-            localStorage.setItem('image_' + imageId, imageData);
+            localStorage.setItem('edited_image', imageData);
+
+						var next_step = document.getElementById('step-2');
+						var image_step_two = document.getElementById('edited_image');
+						var editor_element = document.getElementById("editor").remove();
+						var image_element = document.getElementById("imagers").remove();
+
+						image_step_two.src = localStorage.getItem('edited_image');
+						next_step.style = "visibility = none;";
+
+						//To remove the image from localStorage use this command
+						//localStorage.removeItem('edited_image');
+
           } catch (err) {
             console.error(err);
           }
@@ -106,13 +116,14 @@
 
     var addNew = function () {
       var $imageContainer = $(
-        '<div class="image-container">' +
-        '  <img class="imager-test" ' +
+				'<div class="form-group" id="imagers">' +
+        '	 <div class="image-container">' +
+        '   	<img class="imager-test" ' +
         '       src="" ' +
         '       style="min-width: 300px; min-height: 300px; width: 500px;">' +
-        '</div>');
-
-      $('#imagers').append($imageContainer);
+        '	 </div>' +
+			  '</div>');
+      $('#crop_container').append($imageContainer);
       var imager = new ImagerJs.Imager($imageContainer.find('img'), options);
       imager.startSelector();
 
@@ -134,5 +145,10 @@
       });
     };
   </script>
+
+	<div id="step-2" style="visibility: hidden">
+		<img src="" id="edited_image" />
+	</div>
+
 
 <?php require_once("footer.php"); ?>

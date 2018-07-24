@@ -2829,13 +2829,13 @@ var ImagerJs = {
 
     options = options ? options : {};
     _this.options = $.extend(true, _this.defaultOptions, options);
-        
+
     if (_this.options.allowCustomSetting) {
         _this.options.sizes.push(
             { label: 'Custom' }
-        );  
+        );
     }
-    
+
     _this.imager = imagerInstance;
 
     _this.$qualitySelector = $(
@@ -3597,7 +3597,7 @@ var ImagerJs = {
     this.originalPreviewHeight = this.$imageElement.height();
 
     this.$editContainer = $(
-      '<div class="imager-edit-container" tabindex="1"></div>'
+      '<div class="imager-edit-container" id="editor" tabindex="1"></div>'
     );
 
     if (this.options.editModeCss) {
@@ -4903,7 +4903,7 @@ var ImagerJs = {
         var weight = 0;
         var weights = 0;
         var weights_alpha = 0;
-        
+
         var gx_r = 0, gx_g = 0, gx_b = 0, gx_a = 0;
 
         var center_y = (j + 0.5) * ratio_h;
