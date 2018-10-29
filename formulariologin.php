@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php require_once ("header.php"); ?>
 <link href="css/formulariologin.css" rel="stylesheet">
 
