@@ -9,21 +9,16 @@
 
 		Não perca tempo e faça o download gratuito do software e também se cadastre para receber tutoriais em vídeos e notificações de atualização em primeira mão.</p>
 		<?php
-				$cookie_name = 'email';
-								
 				error_reporting(0);
-				 if (!is_null($_COOKIE[$cookie_name])) { ?>
+				 if (!is_null($_SESSION['login'])) { ?>
 					<p><a href="#" class="btn btn-primary btn-lg" id="btn-custom" href="#" role="button">Download</a></p>
-					
+
 				<?php } else { ?>
 					<p><a class="btn btn-primary btn-lg" id="btn-custom" href="formulariologin.php" role="button">Download</a></p>
 				<?php } ?>
-		
+
 	</div>
-</div> 
+</div>
 
 
 <?php require_once("footer.php"); ?>
-
-
-

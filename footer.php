@@ -1,7 +1,7 @@
 <div class="footer">
 	<div class="panel panel-default panel-costum">
 	<div class="container">
-	
+
   <div class="row">
   <div class="col-sm-6 col-md-4">
         <p><b>Sobre a empresa</b></p>
@@ -11,7 +11,7 @@
       <div class="col-sm-6 col-md-4">
       	<p><b>Contato</b></p>
         <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Rua Ficticia do José, 1890 - Rio de Janeiro/RJ</p>
-        <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (21) 96552-1668</p> 
+        <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (21) 96552-1668</p>
         <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> marketingmail@gmail.com</p>
       </div>
       <div class="col-sm-6 col-md-4">
@@ -22,7 +22,7 @@
   </div>
 </div>
 </div>
-	
+
 </div>
 
 </body>

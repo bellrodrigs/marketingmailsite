@@ -16,7 +16,7 @@ while ($row = $busca->fetch_array()) {
     $usuario = $row;
 }
 
-if (empty($usuario)) {
+if (!empty($usuario)) {
     $_SESSION['login'] = $login;
     echo"<script type='text/javascript'> location.href='logadosucesso.php'; </script>";
 } else {

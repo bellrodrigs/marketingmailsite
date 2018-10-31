@@ -7,7 +7,7 @@
 	<div class="container container-login-custom">
 		<form id="form" class="form-signin">
 			<script>
-				
+
 				window.setInterval(function() {
 					var login = document.getElementById('btn-login');
 					login.setAttribute('disabled', 'disabled');
@@ -19,11 +19,11 @@
 					var celular = document.getElementById('celular');
 
 					if (nome.value != ""  && email.value != "" && senha.value == confirmasenha.value && telefone.value != "" && celular.value != "") {
-						
+
 						login.removeAttribute("disabled");
-						
+
 					}else {
-						
+
 						login.setAttribute('disabled', 'disabled')
 					}
 				}, 50);
@@ -54,4 +54,3 @@
 </div>
 
 <?php require_once("footer.php"); ?>
- 

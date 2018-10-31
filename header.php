@@ -69,13 +69,12 @@
 				<ul class="nav navbar-nav navbar-right">
 
 				<?php
-				$cookie_name = 'email';
 
 				error_reporting(0);
-				 if (!is_null($_COOKIE[$cookie_name])) { ?>
+				 if (!is_null($_SESSION['login'])) { ?>
 
 					<form method="POST" action="logout.php">
-						<p style="color: white; display: inline-block; margin-right: 5px; margin-top: 6px;"><?php echo $_COOKIE[$cookie_name]; ?></p>
+						<p style="color: white; display: inline-block; margin-right: 5px; margin-top: 6px;"><?php echo $_SESSION['login']; ?></p>
 					<button class="btn btn-default navbar-btn" id="btn-deslogar" type="submit">Logout</button>
 					</form>
 				<?php } else { ?>
