@@ -1,7 +1,6 @@
 <?php
 include_once ("conecta.php");
-
-session_start();
+include_once ("header.php");
 
 $login = $_POST['email'];
 $senha = $_POST['senha'];

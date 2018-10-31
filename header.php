@@ -69,8 +69,9 @@
 				<ul class="nav navbar-nav navbar-right">
 
 				<?php
-
+				session_start();
 				error_reporting(0);
+				echo
 				 if (!is_null($_SESSION['login'])) { ?>
 
 					<form method="POST" action="logout.php">
